@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		MY FIRST PROJECT
+	</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<div id="navbar">
+		<a href="null"> 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		</a>
+		<a href="#home">HOME</a>
+		<a href="#about">ABOUT US</a>
+		<a href="#contact">CONTACT</a>
+		<a href="#services">OUR SERVICES</a>
+		<a href="#portfolio">PORTFOLIO</a>
+	</div>
+	<iframe src="imageslide show.html" style="height:750px;width:100%; border-color: #000; margin-top: 20px"></iframe>
+	<script>
+		window.onscroll = function() 
+		{
+			myFunction()
+		};
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() 
+		{
+  			if (window.pageYOffset >= sticky) 
+  			{
+    			navbar.classList.add("sticky")
+  			} 
+  			else 
+  			{
+    			navbar.classList.remove("sticky");
+  			}
+		}
+</script>	
+</body>
+</html>
